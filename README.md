@@ -19,9 +19,9 @@ Each product release and each filing was treated as an event. For every event I 
 
 ## Findings
 
-Product launches. The families with the strongest average reaction are almost all from Apple's early years: the 68000-based Macintosh line averaged a 14.2% return after releases, followed by printers and the AirPort Express. Modern launches, including the iPhone, move the stock much less. The likely reasons are lower expectations and a smaller company in the early years, and the fact that today's launches are anticipated and priced in well before the event.
+Product launches. The families with the strongest average reaction are mostly from Apple's early years: the 68000 family (the Apple Lisa line) averaged a 14.2% return after its three releases, followed by printers (9.8%) and the AirPort Express (6.8%). Modern launches move the stock much less, and the 30 iPhone releases averaged -1.4%. The likely reasons are lower expectations and a smaller company in the early years, and the fact that today's launches are anticipated and priced in well before the event.
 
-SEC filings. Debt-related filings were received best: 424B2 prospectus supplements (+1.37%) and free writing prospectuses (+1.31%), with low volatility. 8-K current reports also averaged a positive return (+1.32%) but had the highest volatility (2.32%), since they announce material events in both directions. Updates to existing plans did worst: 424B3 prospectus updates (-1.79%), preliminary proxy statements (-1.08%) and SEC no-action letters (-0.89%).
+SEC filings. Debt-related filings were received best: 424B2 prospectus supplements (+1.47%) and free writing prospectuses (+1.30%), with low volatility. 8-K current reports also averaged a positive return (+1.32%) but had the highest volatility (2.32%), since they announce material events in both directions. Updates to existing plans did worst: 424B3 prospectus updates (-1.79%), preliminary proxy statements (-1.08%) and SEC no-action letters (-0.89%).
 
 ## Scripts
 
