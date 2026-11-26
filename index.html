@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Does a New Apple Product Move the Stock? | Andrey Zhuravlev</title>
+<meta name="description" content="44 years of AAPL prices, 700 product releases and 2,100 SEC filings, joined in Hive to see which events moved Apple's stock.">
+<meta property="og:title" content="Does a new Apple product move the stock?">
+<meta property="og:description" content="44 years of AAPL prices against every product launch and SEC filing. A big data project by Andrey Zhuravlev.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 60 60%22%3E%3Crect y=%220%22 width=%2260%22 height=%2210%22 fill=%22%2361BB46%22/%3E%3Crect y=%2210%22 width=%2260%22 height=%2210%22 fill=%22%23FDB827%22/%3E%3Crect y=%2220%22 width=%2260%22 height=%2210%22 fill=%22%23F5821F%22/%3E%3Crect y=%2230%22 width=%2260%22 height=%2210%22 fill=%22%23E03A3E%22/%3E%3Crect y=%2240%22 width=%2260%22 height=%2210%22 fill=%22%23963D97%22/%3E%3Crect y=%2250%22 width=%2260%22 height=%2210%22 fill=%22%23009DDC%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="rainbow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+<header class="nav">
+  <span class="nav-name">Andrey Zhuravlev</span>
+  <nav>
+    <a href="#chart">The chart</a>
+    <a href="#launches">Launches</a>
+    <a href="#filings">Filings</a>
+    <a href="https://github.com/azhuravlev1/apple-stock-impact-analysis" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <p class="eyebrow">A big data project · 1980 to 2024</p>
+  <h1>Does a new Apple product<br>move the stock?</h1>
+  <p class="hero-sub">Forty-four years of AAPL prices, seven hundred product releases and two thousand SEC filings, joined together to find out which events the market actually cared about.</p>
+
+  <a class="gh-button" href="https://github.com/azhuravlev1/apple-stock-impact-analysis" target="_blank" rel="noopener">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+    <span>View the code on GitHub</span>
+    <span class="gh-arrow" aria-hidden="true">›</span>
+  </a>
+  <p class="gh-sub">github.com/azhuravlev1/apple-stock-impact-analysis</p>
+
+  <div class="slides-card">
+    <div class="paper-preview-wrap">
+      <div class="paper-preview" id="paperPreview" tabindex="0" aria-label="Scrollable preview of the presentation slides"><div class="preview-loading">Loading slides…</div></div>
+      <span class="preview-page" id="previewPage" aria-live="polite"></span>
+    </div>
+    <div class="slides-info">
+      <p class="slides-label">The presentation</p>
+      <h2>Apple Stock Analysis, 1980–2024</h2>
+      <p class="paper-meta" id="paperMeta">PDF · 11 slides · 0.8 MB</p>
+      <div class="slides-buttons">
+        <button class="pill pill-dark" type="button" data-open-reader>View slides</button>
+        <a class="pill pill-light" href="paper/Apple_Stock_Analysis_Presentation.pdf" download="Apple_Stock_Analysis_Presentation.pdf">Download</a>
+      </div>
+      <a class="text-link" href="https://github.com/azhuravlev1/apple-stock-impact-analysis/blob/main/report/Final_Presentation.pdf" target="_blank" rel="noopener">See the slides on GitHub ›</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHART ================= -->
+<section class="band" id="chart">
+  <div class="inner">
+    <p class="eyebrow">Chapter one</p>
+    <h2>Forty-four years in one line.</h2>
+    <p class="lede">Apple listed in December 1980. Adjusted for every stock split since, a share that closed at about fifteen cents that month closed at $172.69 in April 2024, more than a thousand times higher. The milestones below are the products everyone remembers. The question is whether the stock noticed them at the time.</p>
+  </div>
+  <div class="mac-window">
+    <div class="mac-title"><span class="mac-close" aria-hidden="true"></span><span class="mac-title-text">AAPL · monthly close, split-adjusted</span></div>
+    <div class="mac-toolbar">
+      <span class="seg" role="group" aria-label="Scale">
+        <button type="button" class="seg-btn" data-scale="log" aria-pressed="true">Log scale</button>
+        <button type="button" class="seg-btn" data-scale="linear" aria-pressed="false">Linear</button>
+      </span>
+      <span class="readout" id="readout">Hover over the chart</span>
+    </div>
+    <div id="priceChart" class="price-chart" role="img" aria-label="Line chart of Apple's monthly split-adjusted closing price from December 1980 to April 2024, with product milestones marked"></div>
+  </div>
+  <p class="caption inner">Figure 1. Monthly closing price of AAPL, adjusted for splits, December 1980 to April 2024, from the daily price data in the repository. Milestones mark first releases of each product. On a log scale, equal vertical distances mean equal percentage changes.</p>
+</section>
+
+<!-- ================= METHOD ================= -->
+<section class="band" id="method">
+  <div class="inner">
+    <p class="eyebrow">Chapter two</p>
+    <h2>Every launch. Every filing.</h2>
+    <p class="lede">To ask whether events move prices, you first need the events. I built two event tables and lined them up against 10,925 trading days.</p>
+  </div>
+  <div class="pipeline inner-wide">
+    <div class="pipe-step"><span class="pipe-num">1</span><h3>Products</h3><p>A Python scraper reads Wikipedia's list of Apple products: 701 releases, each with a date and a product family.</p></div>
+    <div class="pipe-arrow" aria-hidden="true">›</div>
+    <div class="pipe-step"><span class="pipe-num">2</span><h3>Filings</h3><p>Every Apple filing on SEC EDGAR since 1994: 2,106 documents, from quarterly reports to insider trades.</p></div>
+    <div class="pipe-arrow" aria-hidden="true">›</div>
+    <div class="pipe-step"><span class="pipe-num">3</span><h3>Join</h3><p>Prices and events loaded into HDFS and joined in Apache Hive, matching each event to the trading days that followed it.</p></div>
+    <div class="pipe-arrow" aria-hidden="true">›</div>
+    <div class="pipe-step"><span class="pipe-num">4</span><h3>Measure</h3><p>For each event, the short-term return and volatility after it, averaged by product family and by filing type.</p></div>
+  </div>
+  <p class="inner small">This was a four-person team project for DS8003, Management of Big Data and Tools, at Toronto Metropolitan University. My part was the product-launch and SEC-filing analysis shown below. Momna Ali handled HDFS ingestion and MapReduce, Steven Luc the PySpark processing and seasonal volatility, and Khushnud Ahmed the Elasticsearch and Kibana dashboards.</p>
+</section>
+
+<!-- ================= LAUNCHES ================= -->
+<section class="band" id="launches">
+  <div class="inner">
+    <p class="eyebrow">Chapter three</p>
+    <h2>The early years moved it most.</h2>
+    <p class="lede">The product families with the strongest average reaction mostly come from a time when Apple was small and nobody knew what it would release next.</p>
+  </div>
+  <div class="families inner-wide">
+    <div class="fam-col">
+      <h3>Biggest average gain after release</h3>
+      <div id="famTop" class="bars"></div>
+    </div>
+    <div class="fam-col">
+      <h3>Biggest average drop after release</h3>
+      <div id="famBottom" class="bars"></div>
+    </div>
+  </div>
+  <p class="caption inner">Figure 2. Average short-term return after a release, by product family, for the ten best and ten worst families. The number after each name is how many releases the average is based on. From the Hive query output in the team's presentation.</p>
+  <div class="inner">
+    <p>The Lisa line, Apple's 68000 family, averaged a 14.2% gain across its three releases, and printers 9.8% across nine. The iPhone, the most successful product Apple ever made, averaged a 1.4% <em>drop</em> across thirty releases. That is less strange than it sounds. By the time an iPhone ships, it has been rumoured, leaked and announced, and its price effect is already in the stock. In the 1980s a new Lisa or LaserWriter was real news for a much smaller company.</p>
+    <p class="small">A word of caution: several families have only three to five releases, so one good or bad week can swing their average. Modems at -13.3% rest on four releases.</p>
+  </div>
+</section>
+
+<!-- ================= FILINGS ================= -->
+<section class="band" id="filings">
+  <div class="inner">
+    <p class="eyebrow">Chapter four</p>
+    <h2>What the paperwork says.</h2>
+    <p class="lede">Filings are less exciting than keynotes, but they tell the market about money, management and risk. Each type of filing has its own personality.</p>
+  </div>
+  <div class="scatter-wrap inner-wide">
+    <div id="filingScatter" class="scatter" role="img" aria-label="Scatter plot of SEC filing types by average return and volatility after filing"></div>
+    <div class="legend" id="filingLegend"></div>
+  </div>
+  <p class="caption inner">Figure 3. Each circle is a type of SEC filing: average return after filing (left to right) against average volatility (bottom to top). Circle size reflects the number of filings. From the Hive query output in the team's presentation.</p>
+  <div class="inner glossary">
+    <div><h3>Calm and positive</h3><p>424B2 prospectus supplements (+1.47%) and free writing prospectuses (+1.30%) accompany Apple's debt offerings. They came with gains and some of the lowest volatility of any filing type.</p></div>
+    <div><h3>Big news, both ways</h3><p>8-K current reports announce material events. Their average return is positive (+1.32%), but their volatility is the highest of all (2.32%), because the news can go either way.</p></div>
+    <div><h3>Changes the market dislikes</h3><p>Updates to existing plans did worst: 424B3 prospectus updates (-1.79%), preliminary proxy statements (-1.08%) and SEC no-action letters (-0.89%).</p></div>
+  </div>
+</section>
+
+<!-- ================= NEXT ================= -->
+<section class="band last" id="next">
+  <div class="inner">
+    <p class="eyebrow">Chapter five</p>
+    <h2>One more thing.</h2>
+    <p class="lede">This is a first pass, not a forecast. The natural next steps are to compare each reaction with the market as a whole, to separate Apple-specific news from days when everything moved, to add macroeconomic indicators, and to try predictive models such as ARIMA and LSTMs on top of the event features.</p>
+    <div class="end-buttons">
+      <a class="pill pill-dark big" href="https://github.com/azhuravlev1/apple-stock-impact-analysis" target="_blank" rel="noopener">Explore the code</a>
+      <button class="pill pill-light big" type="button" data-open-reader>View the slides</button>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="rainbow thin" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <p>Andrey Zhuravlev · <a href="https://github.com/azhuravlev1" target="_blank" rel="noopener">github.com/azhuravlev1</a> · <a href="https://linkedin.com/in/andrey-zh" target="_blank" rel="noopener">linkedin.com/in/andrey-zh</a></p>
+  <p class="fine">Data: AAPL daily prices (Kaggle), SEC EDGAR filing index, Wikipedia's List of Apple products. An independent student project, not affiliated with or endorsed by Apple Inc.</p>
+</footer>
+
+<!-- Reader overlay -->
+<div class="reader" id="reader" aria-hidden="true">
+  <div class="reader-backdrop" data-close-reader></div>
+  <div class="reader-panel" id="readerPanel" role="dialog" aria-modal="true" aria-label="Presentation viewer">
+    <img class="reader-cover" id="readerCover" alt="">
+    <div class="reader-bar">
+      <span class="lights"><button type="button" class="light red" data-close-reader aria-label="Close"></button><i class="light yellow"></i><i class="light green"></i></span>
+      <span class="reader-title">Apple Stock Analysis · Final Presentation</span>
+      <a class="reader-dl" href="paper/Apple_Stock_Analysis_Presentation.pdf" download="Apple_Stock_Analysis_Presentation.pdf">Download</a>
+    </div>
+    <div class="reader-body"><iframe class="reader-frame" id="readerFrame" title="PDF viewer" tabindex="-1"></iframe></div>
+  </div>
+</div>
+
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
